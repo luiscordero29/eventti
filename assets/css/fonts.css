@@ -1,0 +1,47 @@
+/*
+  Fonts
+*/
+@font-face {
+  	font-family: JosefinSans-Bold;
+  	src: url("../fonts/JosefinSans-Bold.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-BoldItalic;
+  	src: url("../fonts/JosefinSans-BoldItalic.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-Italic;
+  	src: url("../fonts/JosefinSans-Italic.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-Light;
+  	src: url("../fonts/JosefinSans-Light.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-LightItalic;
+  	src: url("../fonts/JosefinSans-LightItalic.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-Regular;
+  	src: url("../fonts/JosefinSans-Regular.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-SemiBold;
+  	src: url("../fonts/JosefinSans-SemiBold.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-SemiBoldItalic;
+  	src: url("../fonts/JosefinSans-SemiBoldItalic.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-Thin;
+  	src: url("../fonts/JosefinSans-Thin.ttf") format("opentype");
+}
+@font-face {
+  	font-family: JosefinSans-ThinItalic;
+  	src: url("../fonts/JosefinSans-ThinItalic.ttf") format("opentype");
+}
+body{
+    font-family: JosefinSans-Regular;
+    font-size: 14px;
+}

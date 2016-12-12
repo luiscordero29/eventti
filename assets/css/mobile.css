@@ -1,0 +1,24 @@
+.mobile {
+}
+.mobile .mobile-menu {
+  position: fixed;
+  right: -200px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  width: 200px;
+  background: #eee;
+  padding: 15px;
+}
+.mobile .mobile-menu .widget_car_title {
+  font-family: JosefinSans-Bold;
+  font-size: 12px;
+  border-bottom: solid 1px #939598;
+  padding-bottom: 15px;
+}
+.mobile .mobile-menu .mobile_close {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #000;
+}

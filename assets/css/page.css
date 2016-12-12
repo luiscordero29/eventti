@@ -1,0 +1,120 @@
+#page_header {
+
+}
+#page_header .logo_page {
+		margin-top: 15px;
+		width: 220px;
+}
+#page_header .social {
+		margin-top: 25px;
+}
+#page_header .social a {
+		font-family: JosefinSans-Regular;
+		font-size: 12px;
+		color: #939598;
+}
+#page_header .social .user {
+		margin-left: 10px;
+		margin-right: 10px;
+}
+#page_header .social .fa-inverse {
+    color: #939598;
+}
+#page_header .social .nav > li > a:focus,
+#page_header .social .nav > li > a:hover {
+    background-color: transparent;
+}
+#page_header .social > .nav-pills > li > a {
+		border-radius: 20px;
+}
+#page_header .social .fa-stack {
+		border: 1px solid #939598;
+		border-radius: 20px;
+		color: transparent;
+}
+#page_header .social a:hover .fa-stack {
+		background: #eee;
+}
+#page_header .social > .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 0px 0px;
+		margin-right: 10px;
+
+}
+#page_header .login {
+	top: -33px;
+	position: relative;
+}
+#page_header .login .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 1px solid #939598;
+		width: 180px;
+}
+#page_header .login .breadcrumb a {
+		color: #939598;
+		font-family: JosefinSans-Regular;
+		font-size: 20px;
+}/*
+#page_header .login .breadcrumb > li::before {
+    padding: 0 0px;
+    color: transparent;
+    content: "";
+		font-size: 0px;
+		color: #231f20;
+		font-family: JosefinSans-Light;
+}
+#page_header .login .breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}*/
+#page_header .breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #939598;
+    content: "/";
+		font-size: 20px;
+		font-family: JosefinSans-Light;
+}
+#page_header .breadcrumb {
+    padding: 0px 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: transparent;;
+    border-radius: 0px;
+		margin-top: 50px;
+}
+#page_header .breadcrumb > .active {
+		font-size: 20px;
+		color: #231f20;
+		font-family: JosefinSans-Light;
+}
+#page_header > .row > .col-xs-12 > .breadcrumb > li::before {
+    padding: 0 2px;
+    color: #ccc;
+    content: "<";
+		font-size: 20px;
+		color: #231f20;
+		font-family: JosefinSans-Light;
+}
+#page_header > .row > .col-xs-12 > .breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "<";
+		font-size: 20px;
+		color: #231f20;
+		font-family: JosefinSans-Light;
+}
+#page_header .breadcrumb a {
+		font-size: 20px;
+		color: #231f20;
+		font-family: JosefinSans-Light;
+}
+#page_content {
+		margin-top: 30px;
+		margin-bottom: 60px;
+}

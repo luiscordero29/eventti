@@ -1,0 +1,16 @@
+/*
+Theme Name: eventti
+Theme URI: http://eventti.com.co/
+Author: Team WebDiv
+Author URI: http://webdiv.co/
+Description: Custom WordPress Theme for eventti
+Version: 1.0
+License: All rights reserved.
+Developer: Luis Cordero http://luiscordero29.com/
+font: 28 / 20 - 32 / 24 - 21 / 12 - 44 / 36 - 73 / 65
+*/
+@import url("assets/css/fonts.css");
+@import url("assets/css/base.css");
+@import url("assets/css/page.css");
+@import url("assets/css/woocommerce.css");
+@import url("assets/css/mobile.css");
