@@ -45,11 +45,13 @@ if ( $query->have_posts() ) {
 	endwhile;
 	wp_safe_redirect($location);
 }else{
+	/*
 	if ( wp_get_referer() ){
 	    wp_safe_redirect( wp_get_referer() );
 	}else{
 	    wp_safe_redirect( get_home_url() );
-	}
+	}*/
+	wp_safe_redirect( '/home/planea-tu-boda/' );
 }
 
 ///header("Location: ".$location);
