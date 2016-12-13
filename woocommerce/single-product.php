@@ -20,9 +20,47 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+while ( have_posts() ) : the_post();
+	global $wp_query, $product, $post;
+	//echo var_dump($wp_query,$product,$post);
+	//wc_get_template_part( 'content', 'single-product' );
+	$terms = get_the_terms( $post->ID, 'product_cat' );
+	foreach ($terms as $term) {
+			$category_term_id 	= $term->term_id;
+			$category_name 			= $term->name;
+			$category_slug 			= $term->slug;
+			break;
+	}
+endwhile;
+# echo 'cat: ' . $category_term_id  . ' v: '.$_SESSION['visitas'].' [1: '.$_SESSION['cat_1'].' 2: '.$_SESSION['cat_2'].' 3: '.$_SESSION['cat_3'].']';
 # Login
 if (!is_user_logged_in()){
-	$_SESSION['visitas'] = $_SESSION['visitas']+1;
+
+	if ( ($_SESSION['cat_1'] != 0) and ($_SESSION['cat_2'] != 0) and ($_SESSION['cat_3'] != 0) ) {
+		if ( ($_SESSION['cat_1'] != $category_term_id) and ($_SESSION['cat_2'] != $category_term_id) and ($_SESSION['cat_3'] != $category_term_id) ) {
+			$_SESSION['visitas'] = $_SESSION['visitas']+1;
+		}
+	}
+	if ( ($_SESSION['cat_3'] === 0) and ($_SESSION['cat_1'] != 0) and ($_SESSION['cat_2'] != 0)) {
+		if ( ($_SESSION['cat_1'] != $category_term_id) and ($_SESSION['cat_2'] != $category_term_id) ) {
+			$_SESSION['cat_3'] = $category_term_id;
+			$_SESSION['visitas'] = $_SESSION['visitas']+1;
+		}
+	}
+	if ( ($_SESSION['cat_2'] === 0) and ($_SESSION['cat_1'] != 0) ) {
+		if ($_SESSION['cat_1'] != $category_term_id) {
+			$_SESSION['cat_2'] = $category_term_id;
+			$_SESSION['cat_3'] = 0;
+			$_SESSION['visitas'] = $_SESSION['visitas']+1;
+		}
+	}
+	if ( $_SESSION['cat_1'] === 0 ) {
+	    $_SESSION['cat_1'] = $category_term_id;
+			$_SESSION['cat_2'] = 0;
+			$_SESSION['cat_3'] = 0;
+			$_SESSION['visitas'] = $_SESSION['visitas']+1;
+	}
+
 	if ($_SESSION['visitas']>3) {
 		if ( wp_get_referer() ){
 		    wp_safe_redirect( wp_get_referer() );
@@ -34,6 +72,7 @@ if (!is_user_logged_in()){
 
 include(TEMPLATEPATH.'/includes/head.php');
 include(TEMPLATEPATH.'/includes/header_woocommerce.php');
+# echo 'cat: ' . $category_term_id  . ' v: '.$_SESSION['visitas'].' [1: '.$_SESSION['cat_1'].' 2: '.$_SESSION['cat_2'].' 3: '.$_SESSION['cat_3'].']';
 
 while ( have_posts() ) : the_post();
 	global $wp_query, $product, $post;

@@ -6,6 +6,15 @@ session_start();
 if (empty($_SESSION['visitas'])) {
     $_SESSION['visitas'] = 0;
 }
+if (empty($_SESSION['cat_1'])) {
+    $_SESSION['cat_1'] = 0;
+}
+if (empty($_SESSION['cat_2'])) {
+    $_SESSION['cat_2'] = 0;
+}
+if (empty($_SESSION['cat_3'])) {
+    $_SESSION['cat_3'] = 0;
+}
 /*
     MENUS
 */
