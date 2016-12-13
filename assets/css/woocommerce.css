@@ -559,3 +559,13 @@ a.css-fbl:hover {
 .menu-mobile .nav > li > a:hover {
     color: #000;
 }
+div.alert.alert-success a {
+    display: none;
+}
+.cart-item {
+    padding: 10px 0px;
+}
+.total {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}

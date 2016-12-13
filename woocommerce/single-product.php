@@ -51,7 +51,7 @@ while ( have_posts() ) : the_post();
 	<div id="woocommerce">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-10 col-xs-offset-1">
 					<?php
 						/**
 						 * woocommerce_before_single_product hook.
@@ -65,8 +65,6 @@ while ( have_posts() ) : the_post();
 						 	return;
 						 }
 					?>
-				</div>
-				<div class="col-xs-10 col-xs-offset-1">
 					<?php echo do_shortcode( '[embedyt]' . $video . '[/embedyt]' );?>
 				</div>
 				<div class="col-xs-5 col-xs-offset-1">

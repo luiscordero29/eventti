@@ -31,21 +31,21 @@ $(document).ready(function() {
     });
 
     /* Login Form */
-    $( "#woocommerce_register" ).click(function() {
-      $( "#form_woocommerce_register" ).show();
-      $( "#form_woocommerce_login" ).hide();
+    $( "a#woocommerce_register" ).click(function() {
+      $( "form#form_woocommerce_register" ).show();
+      $( "form#form_woocommerce_login" ).hide();
     });
-    $( ".ModalRegister" ).click(function() {
-      $( "#form_woocommerce_register" ).show();
-      $( "#form_woocommerce_login" ).hide();
+    $( "a.ModalRegister" ).click(function() {
+      $( "form#form_woocommerce_register" ).show();
+      $( "form#form_woocommerce_login" ).hide();
     });
-    $( "#woocommerce_login" ).click(function() {
-      $( "#form_woocommerce_login" ).show();
-      $( "#form_woocommerce_register" ).hide();
+    $( "a#woocommerce_login" ).click(function() {
+      $( "form#form_woocommerce_login" ).show();
+      $( "form#form_woocommerce_register" ).hide();
     });
-    $( ".ModalLogIn" ).click(function() {
-      $( "#form_woocommerce_login" ).show();
-      $( "#form_woocommerce_register" ).hide();
+    $( "a.ModalLogIn" ).click(function() {
+      $( "form#form_woocommerce_login" ).show();
+      $( "form#form_woocommerce_register" ).hide();
     });
 
 });

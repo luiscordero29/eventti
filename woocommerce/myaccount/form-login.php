@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php do_action( 'woocommerce_before_customer_login_form' ); ?>
 
-<form method="post" class="login" id="form_woocommerce_login">
+<form method="post" class="login" id="form_woocommerce_login" action="/mi-cuenta/#woocommerce_login">
 
 		<?php do_action( 'woocommerce_login_form_start' ); ?>
 
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </form>
 
-<form method="post" class="register" id="form_woocommerce_register">
+<form method="post" class="register" id="form_woocommerce_register" action="/mi-cuenta/#woocommerce_register">
 
 		<?php do_action( 'woocommerce_register_form_start' ); ?>
 

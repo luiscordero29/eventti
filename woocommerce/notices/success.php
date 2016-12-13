@@ -26,6 +26,10 @@ if ( ! $messages ){
 
 ?>
 
-<?php foreach ( $messages as $message ) : ?>
-	<div class="woocommerce-message"><?php echo wp_kses_post( $message ); ?></div>
-<?php endforeach; ?>
+<div class="row">
+  <div class="col-xs-12">
+		  <?php foreach ( $messages as $message ) : ?>
+				<div class="alert alert-success" role="alert"><?php echo wp_kses_post( $message ); ?></div>
+	    <?php endforeach; ?>
+   </div>
+</div>
